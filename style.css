@@ -1,0 +1,592 @@
+/* 🌸 Elegant Color Palette */
+:root {
+    --primary-color: #753f42;  /* Deep Purple */
+    --secondary-color: #0b8132; /* Soft Violet */
+    --accent-color: #040404; /* Warm Yellow */
+    --light-bg: #F9F7FE; /* Very Soft Background */
+    --dark-text: #2C2C54; /* Rich Dark Blue */
+    --button-hover: #e460d9; /* Darker Purple */
+    --box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--light-bg);
+    color: var(--dark-text);
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    padding: 120px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Background Slider */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.hero .stats {
+    font-size: 1.3em;
+    font-weight: bold;
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background 0.3s;
+    box-shadow: 0px 5px 10px var(--box-shadow);
+}
+
+.cta-button:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px var(--box-shadow);
+}
+/* Background Slider */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    padding: 50px;
+    background: var(--light-bg);
+}
+
+.video-container {
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px var(--box-shadow);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.video-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 20px var(--box-shadow);
+}
+
+.video-container h3 {
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.video-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.video-container video:hover {
+    opacity: 0.9;
+}
+
+/* 🌸 Enhanced Quotes Section with Glassmorphism */
+.quotes {
+    background: url(./images/Womens-girls.webp) no-repeat center center/cover;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+/* 🎀 Ultra-Stylish Gradient Heading */
+.quotes h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(120deg, #FF8C00, #FF3CAC, #50C878, #3BB3F5);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1.5s ease-in-out, gradientMove 5s infinite alternate;
+    text-shadow: 2px 2px 10px rgba(255, 140, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ✨ Glow Effect on Hover */
+.quotes h2:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 20px rgba(255, 140, 0, 0.6), 
+                 2px 2px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* 🎭 Gradient Animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* 🎭 Soft Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 🔹 Underline Accent */
+.quotes h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #3bea32;
+    margin: 12px auto 0;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.quotes h2:hover::after {
+    width: 120px;
+}
+
+/* 📜 Glassmorphism Quote Box */
+blockquote {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+    margin: 40px auto;
+    width: 70%;
+    color: #101010;
+    padding: 30px;
+    text-align: center;
+    border-left: 10px solid #ff9f43; /* Warm Accent */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.15);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+/* ✨ Quote Hover Effect with Neon Glow */
+blockquote:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(255, 165, 0, 0.5), 
+                0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* 🗨️ Dynamic Floating Quote Marks */
+blockquote::before, blockquote::after {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ff9f43;
+    position: absolute;
+    font-family: "Georgia", serif;
+    opacity: 0.9;
+}
+
+/* 📍 Positioning Quote Marks */
+blockquote::before {
+    content: "“";
+    left: -40px;
+    top: -15px;
+    animation: floatQuote 4s infinite alternate;
+}
+
+blockquote::after {
+    content: "”";
+    right: -40px;
+    bottom: -15px;
+    animation: floatQuote 4s infinite alternate-reverse;
+}
+
+/* 🌀 Floating Animation for Quote Marks */
+@keyframes floatQuote {
+    from {
+        transform: translateY(-6px);
+    }
+    to {
+        transform: translateY(6px);
+    }
+}
+
+/* 🎭 Soft Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quotes h2, blockquote {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+/* 🎭 Soft Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quotes h2, blockquote {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/*-----------------------contact---------------*/
+#contact {
+    padding: 50px 0;
+    background: #222; /* Darker background for contrast */
+    color: #fff;
+    text-align: center;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: start;
+    color: #ddd;
+    
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-left p:hover i {
+    transform: scale(1.2);
+    color: #ff4081;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Styled Button */
+.btn {
+    display: inline-block;
+    background: #ff004f;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+.contact-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 450px;
+    border: 2px solid transparent;
+    outline: none;
+    background: #333;
+    padding: 14px;
+    margin: 12px 0;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff004f;
+    background: #444;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+form .btn2 {
+    padding: 12px 50px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form .btn2:hover {
+    background: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Copyright Section */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: #bbb;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .contact-left p {
+        justify-content: center;
+    }
+}
+
+/* Submit Button */
+.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    color: white;
+    padding: 14px 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn2:hover {
+    background: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Copyright Section */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .quotes h2 {
+        font-size: 2.2em;
+    }
+
+    blockquote {
+        width: 90%;
+        font-size: 1.4em;
+        padding: 15px;
+    }
+
+    blockquote::before, blockquote::after {
+        font-size: 2em;
+    }
+}
+
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .video-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .video-container h3 {
+        font-size: 1.5em;
+    }
+
+    .video-container p {
+        font-size: 1em;
+    }
+};
