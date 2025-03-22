@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Imbalance Awareness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+   <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-slider">
+        <div class="slide active" style="background-image: url('./images/img1.jpg');"></div>
+        <div class="slide" style="background-image: url('./images/img3.jpg');"></div>
+        <div class="slide" style="background-image: url('./images/girl1.png');"></div>
+        <div class="slide" style="background-image: url('./images/img8.png');"></div>
+        <div class="slide" style="background-image: url('./images/img5.jpg');"></div>
+        <div class="slide" style="background-image: url('./images/girl3.webp');"></div>
+    </div>
+    <div class="hero-content">
+        <h1>🌍 Empower Her, Empower the World</h1>
+        <p class="subheading">Every girl deserves a future. Let's break the cycle of gender imbalance.</p>
+        <p class="stats">⚖ 914 Girls for every 1000 Boys (2011 Census) ⚖</p>
+        <button class="cta-button" onclick="learnMore()">Join the Movement</button>
+    </div>
+</section>
+
+    
+    
+    <!-- Video/Animation Section -->
+<section class="video-section">
+    <h2>Watch These Emotional Videos</h2>
+
+    <!-- Local Video 1 -->
+    <div class="video-container">
+        <h3>A 60 Second Female Tale - A Social Message</h3>
+        <p>This short yet powerful video highlights the struggles and strength of women in society. Watch and be inspired!</p>
+        <video controls>
+            <source src="A 60 Second Female Tale - A Social Message _ Women Empowerment.mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Local Video 2 -->
+    <div class="video-container">
+        <h3>Empowering Women</h3>
+        <p>Women are the backbone of society. This video showcases their resilience and importance in shaping the future.</p>
+        <video controls>
+            <source src="Empowering Women.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+    
+    <!-- Quotes & Real-life Stories -->
+    <section class="quotes">
+        <h2>Real Voices</h2>
+        <blockquote>"A girl child is not a burden, she is the light of the future." - Sneha</blockquote>
+        <blockquote>"My parents wanted a son, but now they say I'm their biggest pride." </blockquote>
+    </section>
+
+   <!------------------contact--------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me </h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> snehachaudhary1710@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 9661273093</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Sneha. Made with <i class="fa-solid fa-heart"></i> by Sneha Chaudhary</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
